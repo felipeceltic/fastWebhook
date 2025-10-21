@@ -56,27 +56,27 @@ http://localhost:3001
 ---
 ## 🌍 Integração com o Zendesk (usando ngrok)
 
-## Para receber requisições do Zendesk ou qualquer outro serviço externo, é necessário expor o servidor local com uma URL pública.
+Para receber requisições do Zendesk ou qualquer outro serviço externo, é necessário expor o servidor local com uma URL pública.
 
 -Instale o ngrok (caso ainda não tenha):
 👉 https://ngrok.com/download
 
-## No terminal, execute o comando abaixo para expor sua porta local (3001):
+No terminal, execute o comando abaixo para expor sua porta local (3001):
 ```bash
 ngrok http 3001
 ```
 
-## Copie a URL gerada (exemplo: https://a1b2c3d4.ngrok.io) e utilize-a ao configurar seu webhook no Zendesk:
+Copie a URL gerada (exemplo: https://a1b2c3d4.ngrok.io) e utilize-a ao configurar seu webhook no Zendesk:
 
 Endpoint do webhook:
 ```bash
 https://a1b2c3d4.ngrok.io/
 ```
 
-## As requisições enviadas pelo Zendesk aparecerão automaticamente no painel visual:
+As requisições enviadas pelo Zendesk aparecerão automaticamente no painel visual:
 👉 http://localhost:3001/visualizar
 
-## ⚠️ Importante: a URL do ngrok muda a cada reinicialização, a menos que você tenha uma conta com domínio fixo.
+⚠️ Importante: a URL do ngrok muda a cada reinicialização, a menos que você tenha uma conta com domínio fixo.
 ---
 
 ## 🌐 Endpoints
