@@ -233,9 +233,9 @@ fastify.get("/status", async () => ({ status: "ok" }));
 
 // Inicia o servidor
 try {
-    await fastify.listen({ port: 3001 });
-    console.log("🚀 Servidor rodando em http://localhost:3001");
-    console.log("👀 Visualizador: http://localhost:3001/visualizar");
+    await fastify.listen({ host: "0.0.0.0", port: 10000 });
+    console.log("🚀 Servidor rodando");
+    console.log("👀 Visualizador: /visualizar");
 } catch (err) {
     fastify.log.error(err);
     process.exit(1);
